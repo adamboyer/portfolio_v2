@@ -1,11 +1,31 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js -e js,css,hbs,handlebars"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamboyer/portfolio_v2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/adamboyer/portfolio_v2/issues"
+  },
+  "homepage": "https://github.com/adamboyer/portfolio_v2#readme",
+  "description": "",
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "nodemon": "^2.0.16",
+    "normalize.css": "^8.0.1",
+    "path": "^0.12.7",
+    "url": "^0.11.0"
+  }
 }

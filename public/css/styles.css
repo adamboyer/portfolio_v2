@@ -1,0 +1,64 @@
+/*Utility Style*/
+* {
+	box-sizing: border-box !important;
+}
+:root {
+	--dark-blue: #003366;
+	--light-blue: #3399FF;
+	--tan: #FFCC99;
+	--peach: #FF9966;
+
+}
+.btn {
+	width: 100px;
+	padding: 15px;
+	text-decoration: none;
+	background-color: var(--peach);
+	border-radius: 20px;
+}
+
+/*Hero Style*/
+#hero {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	width: 100vw;
+	height: 100vh;
+}
+#heroVideo {
+	width: 100%;
+	position: fixed;
+	z-index: -2;
+}
+
+#hero:before {
+	content: '';
+	position: absolute;
+	background: rgba(0, 51, 102, .55); 
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+}
+
+#heroContent {
+	font-family: 'Arvo', serif;
+	font-family: 'Josefin Sans', sans-serif;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+}
+
+#heroContent div {
+	width: 100%;
+	height: 20%;
+	padding-top: 100px;
+}
